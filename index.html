@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>ID Card Form</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+        <form>
+        <h3 >Employee ID Card Form</h3>
+        <div class="container">
+        <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">First Name</label>
+                <div class="col-5">
+                  <input class="form-control" type="text" placeholder="Enter your firstname" id="example-text-input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode=== 8) || (event.charCode===32)">
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Full Name</label>
+                <div class="col-5">
+                  <input class="form-control" type="text" placeholder="Enter your fullname" id="example-text-input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode=== 8) || (event.charCode===32)">
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Designation</label>
+                <div class="col-5">
+                  <input class="form-control" type="text" placeholder="Enter your Designation" id="example-text-input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode=== 8) || (event.charCode===32)">
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="empid" class="col-2 col-form-label">Employee code</label>
+                <div class="col-5">
+                  <input  type="number" class="form-control" placeholder="Enter your virtusa employee code" id="empid">
+                </div>
+        </div>
+        <div class="form-group row">
+                <label class=" col-2 col-form-label" for="example-text-input">Blood Group</label>
+                <div  class="col-10">
+                <select  id="FormBloodGroup">
+                  <option selected>Choose...</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                </select> </div> 
+        </div> 
+        <div class="form-group row">
+                <label class=" col-2 col-form-label" for="example-text-input">Reason for issue</label>
+                <div  class="col-10"> 
+                    <select id="inlineFormIssue">
+                  <option selected>Choose...</option>
+                  <option value="1">New Employee</option>
+                  <option value="2">Lost</option>
+                  <option value="3">Defaced</option>
+                  <option value="4">Conversion</option>
+                  <option value="5">Designation change</option>
+                </select></div>
+        </div>
+        <div class="form-group row">
+                <label for="date-input" class="col-2 col-form-label">Date of Employment</label>
+                <div class="col-5">
+                  <input  type="date" class="form-datetime" value="choose date" id="example-date-input">
+                </div>
+        </div> 
+        <div class="form-group row">
+                <label for="FormGroupInput" class="col-2 col-form-label ">Email Id(Virtusa)</label>
+                <div class="col-sm-5">
+                  <input type="email" class="form-control" id="FormGroupInput" placeholder="you@virtusa.com">
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="example-tel-input" class="col-2 col-form-label">Employee mobile number</label>
+                <div class="col-5">
+                        <input class="form-control" type="tel" placeholder="Enter your mobile number" id="example-tel-input">
+                </div>
+        </div>
+        <div class="form-group row">
+                <label for="example-tel-input" class="col-2 col-form-label">Emergency contact number</label>
+                <div class="col-5">
+                        <input class="form-control" type="tel" placeholder="Enter your  number" id="example-tel-input">
+                </div>
+        </div>
+        <button type="button" class="btn" onclick="addDetails()">submit</button>
+        </form>
+</div>
+        <script src="js/jquery.js "></script>
+        <script src="js/app.js "></script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+input:required:invalid {
+    border: 1px solid red;
+}
+h3 {
+    text-align: center;
+  }
+.input{
+    display:block;
+}
+body {background-color: coral;}
